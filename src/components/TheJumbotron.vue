@@ -42,6 +42,11 @@ export default {
             </div>
         </div>
 
+        <div class="boxAdvertising">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+
 
     </div>
 
@@ -61,6 +66,7 @@ export default {
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .boxJumbotron{
@@ -157,6 +163,30 @@ input{
         color: $grey;
         font-size: smaller;
     }
+}
+
+.boxAdvertising{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.box1 , .box2{
+   width: 65px; 
+   height: 65px;
+   background-color: bisque;
+   margin: 1rem;
+   border-radius: 0.5rem;
+}
+
+.box1{
+    background-image: url(../assets/img/htmlmgEs.png);
+    background-size: contain;
+}
+
+.box2{
+    background-image: url(../assets/img/vueImgEs.png);
+    background-size: cover;
 }
 
 </style>
