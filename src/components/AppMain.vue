@@ -1,11 +1,13 @@
 <script>
 
 import ThePacket from './ThePacket.vue';
+import TheBrands from './TheBrands.vue';
 
 export default {
   name: "AppMain",
   components:{
     ThePacket,
+    TheBrands,
   },
 }
 
@@ -16,6 +18,7 @@ export default {
 
     <main>
         <ThePacket />
+        <TheBrands />
     </main>
 
 </template>

@@ -78,10 +78,9 @@ export default {
 @use '../style/variables.scss' as *;
 
 .boxPacket{
-    height: 2400px ;
     max-width: 1320px;
     margin: 0 auto;
-    padding: 100px 0px;
+    padding: 100px 0px 0px 0px;
 }
 
 .box{
