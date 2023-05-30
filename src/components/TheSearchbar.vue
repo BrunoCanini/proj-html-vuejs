@@ -34,8 +34,9 @@ export default {
 @use '../style/variables.scss' as *;
 
 .containerSearchbar{
-    padding: 2rem 300px;
-    width: 100%;
+    padding: 2rem 0;
+    max-width: 1320px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

@@ -18,35 +18,38 @@ export default {
 
     <div class="containerJumbotron">
 
-        <div class="boxJumbotron">
-            <h1>Unlock Your Online Growth Potential</h1>
-            <p>Online marketing to secure customer retention, leads, and sales. We focus on the bigger picture</p>
-            <button>Our services <i class="fa-solid fa-arrow-right"></i> </button>
-        </div>
+        <div class="containerWidth">
 
-        <div class="boxInForm">
-            <div class="boxImg">
-                <img src="../assets/img/marketing-consultant-expert.jpg" alt="">
-                <h3>Richard Madsen</h3>
-                <p>Marketing Consulting Expert</p>
-                <span><i class="fa-solid fa-phone iconAwesome"></i>{{ this.store.phoneNumber }}</span>
+            <div class="boxJumbotron">
+                <h1>Unlock Your Online Growth Potential</h1>
+                <p>Online marketing to secure customer retention, leads, and sales. We focus on the bigger picture</p>
+                <button>Our services <i class="fa-solid fa-arrow-right"></i> </button>
             </div>
-            <div class="boxForm">
-                <form action="">
-                    <input type="name" placeholder="You Name*">
-                    <input type="email" placeholder="Your Email*">
-                    <input type="number" placeholder="Your Phone Number*">
-                    <button type="submit">Get a Callback</button>
-                </form>
-                <span>By submitting my data i gree to be contacted</span>
+
+            <div class="boxInForm">
+                <div class="boxImg">
+                    <img src="../assets/img/marketing-consultant-expert.jpg" alt="">
+                    <h3>Richard Madsen</h3>
+                    <p>Marketing Consulting Expert</p>
+                    <span><i class="fa-solid fa-phone iconAwesome"></i>{{ this.store.phoneNumber }}</span>
+                </div>
+                <div class="boxForm">
+                    <form action="">
+                        <input type="name" placeholder="You Name*">
+                        <input type="email" placeholder="Your Email*">
+                        <input type="number" placeholder="Your Phone Number*">
+                        <button type="submit">Get a Callback</button>
+                    </form>
+                    <span>By submitting my data i gree to be contacted</span>
+                </div>
             </div>
-        </div>
 
-        <div class="boxAdvertising">
-            <div class="box1"></div>
-            <div class="box2"></div>
-        </div>
+            <div class="boxAdvertising">
+                <div class="box1"></div>
+                <div class="box2"></div>
+            </div> 
 
+        </div>
 
     </div>
 
@@ -58,15 +61,20 @@ export default {
 @use '../style/variables.scss' as *;
 
 .containerJumbotron{
-    padding: 100px 300px;
+    padding: 100px 0;
     height: 690px;
     width: 100%;
     background-image: url(../assets/img/marketing-intro.jpg);
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+.containerWidth{
+    max-width: 1320px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
 }
 
 .boxJumbotron{
@@ -95,7 +103,6 @@ export default {
 
 .boxInForm{
     width: 35%;
-    max-width: 475px;
     background-color: white;
     border-radius: 0.7rem;
     border: 1px solid rgba(128, 128, 128, 0.2);
