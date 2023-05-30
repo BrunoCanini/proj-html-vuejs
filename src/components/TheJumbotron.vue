@@ -88,7 +88,8 @@ export default {
 }
 
 .boxInForm{
-    width: 475px;
+    width: 35%;
+    max-width: 475px;
     background-color: white;
     border-radius: 0.7rem;
     border: 1px solid rgba(128, 128, 128, 0.2);
@@ -96,6 +97,7 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     padding: 40px;
+    box-shadow: 1px 5px rgba(128, 128, 128, 0.074);
 }
 
 .boxImg{
