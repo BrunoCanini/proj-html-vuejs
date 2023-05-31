@@ -110,7 +110,7 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     padding: 40px;
-    box-shadow: 1px 5px rgba(128, 128, 128, 0.074);
+    box-shadow: 3px 5px rgba(128, 128, 128, 0.074);
 }
 
 .boxImg{
