@@ -3,6 +3,7 @@
 import ThePacket from './ThePacket.vue';
 import TheBrands from './TheBrands.vue';
 import TheCards from './TheCards.vue';
+import TheOptimizing from './TheOptimizing.vue';
 
 export default {
   name: "AppMain",
@@ -10,6 +11,7 @@ export default {
     ThePacket,
     TheBrands,
     TheCards,
+    TheOptimizing,
   },
 }
 
@@ -22,6 +24,7 @@ export default {
         <ThePacket />
         <TheBrands />
         <TheCards />
+        <TheOptimizing />
     </main>
 
 </template>
