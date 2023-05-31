@@ -62,6 +62,17 @@ export default {
         </div>
 
         <TheAwards />
+
+        <div class="containerAvada">
+            <div class="contImg"> <img src="../assets/img/case-studies-5.jpg" alt=""> </div>
+            <div class="contText">
+                <div>
+                    <h2>"The team at Avada Marketing Consultant is fabolous. They Helped us unlock our potential online ad offline. We have experienced year growth due to their progressive approach."</h2>
+                    <p>Kate Schadler</p>
+                    <span>Marketing Consultant - Abstract</span>
+                </div>
+            </div>
+        </div>
     </div>
 
 </template>
@@ -120,6 +131,49 @@ export default {
 .color{
     width: 100%;
     background-color: $panna;
+}
+
+.containerAvada{
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+        .contImg{
+            width: 50%;
+            height: 590px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 0.5rem;
+                }
+        }
+
+        .contText{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10rem;
+
+                h2{
+                    padding-bottom: 2rem;
+                }
+
+                p{
+                    padding-bottom: 0.6rem;
+                    font-weight: bold;
+                    color:rgb(49, 45, 45);
+
+                }
+
+                span{
+                    font-size: small;
+                }
+        }
 }
 
 </style>
