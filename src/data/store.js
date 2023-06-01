@@ -8,5 +8,12 @@ export const store = reactive({
         resources: ["Learning Center", "Video Tutorials", "Customers", "Blog"],
         company: ["Who We Are", "Contact Us","Careers"]
     },
-    emailCompany: "info@yourcompany.com"
+    emailCompany: "info@yourcompany.com",
+    // cards:  [
+    //     {
+    //         img: ,
+    //         message: '',
+    //         booleano: ''
+    //     },
+    // ],
 })
