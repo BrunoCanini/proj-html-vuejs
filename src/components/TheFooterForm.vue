@@ -2,9 +2,11 @@
 
 import { store } from '../data/store';
 
-
 export default {
-  name: "TheJumbotron",
+  name: 'TheFooterForm',
+  components:{
+
+  },
   data(){
         return{
             store,
@@ -16,14 +18,16 @@ export default {
 
 <template>
 
-    <div class="containerJumbotron">
+    <div class="color">
 
-        <div class="containerWidth">
-
-            <div class="boxJumbotron">
-                <h1>Unlock Your Online Growth Potential</h1>
-                <p>Online marketing to secure customer retention, leads, and sales. We focus on the bigger picture</p>
-                <button>Our services <i class="fa-solid fa-arrow-right"></i> </button>
+        <div class="containerFooterForm">
+            <div class="containerText">
+                <h1>Let's Make things Happen</h1>
+                <p>Curabitur ac leo nunc. Vestibulum et maurius vel ante finibus maximus nec et leo. Integer consectetur</p>
+                <hr>
+                <p class="custom">"The team at Avada Marketing Consultant is fabolous. They helped us unlock our potential online ad offline. We have experienced year on year growth due to their progressive approach."</p>
+                <span>George Anderson</span>
+                <br><small>Digitalbox CEO</small>
             </div>
 
             <div class="boxInForm">
@@ -44,65 +48,69 @@ export default {
                 </div>
             </div>
 
-            <div class="boxAdvertising">
-                <div class="box1"></div>
-                <div class="box2"></div>
-            </div> 
-
         </div>
 
     </div>
-
-
 
 </template>
 
 <style lang="scss" scoped>
 @use '../style/variables.scss' as *;
 
-.containerJumbotron{
-    padding: 100px 0;
-    height: 690px;
+.color{
     width: 100%;
-    background-image: url(../assets/img/marketing-intro.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    background-color: $black;
 }
 
-.containerWidth{
+.containerFooterForm{
     max-width: 1320px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 110px 0;
 }
 
-.boxJumbotron{
-    width: 45%;
-    color: $white;
-    padding: 25px 0;
-    margin-right: 120px;
+.containerText{
+    width: 50%;
+    color: white;
+    padding: 0 180px 0 0;
 
         h1{
-            font-size: 55px;
+            font-size: 3.5rem;
+            // 3
         }
 
         p{
-            font-size: 25px;
-            padding: 45px 0;
+            font-size: 1.6rem;
+            padding: 25px 0;
         }
 
-        button{
-            width: 180px;
-            padding: 20px;
-            border-radius: 0.5rem;
-            font-weight: bold;
-            border: none;
+        hr{
+            width: 15%;
+            margin: 20px 0;
+        }
+
+        .custom{
+            font-size: 1.2rem;
+            font-family: initial;
+        }
+
+        span{
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        small{
+            font-size: x-small;
+            color: rgba(255, 255, 255, 0.54)
         }
 }
 
 .boxInForm{
-    width: 35%;
+    // width: 35%;
+    width: 475px;
+    height: 626px;
     background-color: white;
     border-radius: 0.7rem;
     border: 1px solid rgba(128, 128, 128, 0.2);
@@ -111,6 +119,7 @@ export default {
     justify-content: center;
     padding: 40px;
     box-shadow: 3px 5px rgba(128, 128, 128, 0.074);
+    margin-right: 90px;
 
         .boxImg{    
 
@@ -171,29 +180,6 @@ export default {
             }
         }
 
-}
-.boxAdvertising{
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.box1 , .box2{
-   width: 65px; 
-   height: 65px;
-   background-color: bisque;
-   margin: 1rem;
-   border-radius: 0.5rem;
-}
-
-.box1{
-    background-image: url(../assets/img/htmlmgEs.png);
-    background-size: contain;
-}
-
-.box2{
-    background-image: url(../assets/img/vueImgEs.png);
-    background-size: cover;
 }
 
 </style>
