@@ -162,7 +162,7 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     right: 17px;
     bottom: 17px;
 }
