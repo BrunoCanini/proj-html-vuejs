@@ -82,5 +82,11 @@ a:hover{
     border-bottom: 2px solid $orange;
 }
 
+button:hover{
+  background-color: $hoverButton;
+  color: white;
+}
+
+
 
 </style>
