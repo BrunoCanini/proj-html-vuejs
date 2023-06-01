@@ -128,4 +128,13 @@ export default {
         }
 }
 
+.cardImg:hover{
+    filter: saturate(200%);
+}
+
+button:hover{
+  background-color: $hoverButton;
+}
+
+
 </style>

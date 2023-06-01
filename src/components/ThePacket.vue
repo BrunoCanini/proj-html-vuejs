@@ -153,5 +153,10 @@ export default {
     flex-direction: row-reverse;
 }
 
+button:hover{
+  background-color: $hoverButton;
+}
+
+
 
 </style>

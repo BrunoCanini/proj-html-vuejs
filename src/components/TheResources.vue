@@ -109,4 +109,16 @@ export default {
         padding: 1rem 0;
     }
 }
+
+// hover
+
+.cardImg:hover{
+    filter: saturate(400%);
+}
+
+button:hover{
+  background-color: $hoverButton;
+}
+
+
 </style>
