@@ -76,6 +76,13 @@ export default {
 
         </div>
 
+        <div class="popap">
+            <div class="popapImg"> <img src="../assets/img/marketing-expert-cta.png" alt=""> </div>
+            <div class="popapText">
+                <p>This is a free HubSpot live chat. You can create your own chat flows and engage your customers with Avada & HubSpot!</p>
+            </div>
+            <div class="popapIcon"> <i class="fa-solid fa-message" style="color: #ffffff;"></i> </div>
+        </div>
     </div>
 
 </template>
@@ -86,6 +93,7 @@ export default {
 .color{
     width: 100%;
     background-color: #efeff2;
+    position: relative;
 }
 
 .containerFooterLink{
@@ -145,5 +153,53 @@ li{
 
 span{
     font-size: small;
+}
+
+// popap
+
+.popap{
+    width: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    right: 17px;
+    bottom: 17px;
+}
+
+.popapText{
+    background-color: white;
+    width: 230px;
+    height: 160px;
+    padding: 0 1rem;
+    color: rgb(86, 86, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popapImg{
+    width: 50px;
+    height: 50px;
+
+        img{
+            width: 100%;
+            border-radius: 50%;
+            position: relative;
+            top: 25px;
+        }
+}
+
+.popapIcon{
+    width: 65px;
+    height: 65px;
+    background-color: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 20px;
+    position: relative;
+    left: 80px;
 }
 </style>
